@@ -8,4 +8,4 @@ Select `Id`, `Date`, `Transaction`  from BillCollection
 WHERE BillCount > 0 AND BillCount < 4;
 
 Select * FROM Payments
-WHERE ReceiptID != 0 and PaymentAmount != 60 and PaymentAmount > 15
+WHERE ReceiptID IS NOT NULL and PaymentAmount != 60 and PaymentAmount > 15
