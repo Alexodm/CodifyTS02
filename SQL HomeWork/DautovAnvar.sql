@@ -1,10 +1,10 @@
-SELECT Id, Total, Date FROM Transactions
+SELECT Id, "Total", "Date" FROM Transactions
 WHERE Status='2';
 
 SELECT Id, OperatorId, View FROM Services
 WHERE MaxAmount<='5000';
 
-SELECT Id, Date, "Transaction" FROM BillCollection
+SELECT Id, "Date", "Transaction" FROM BillCollection
 WHERE BillCount >0 AND BillCount <4;
 
 SELECT * FROM Payments
