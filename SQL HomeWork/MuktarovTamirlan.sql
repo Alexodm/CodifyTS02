@@ -1,0 +1,2 @@
+SELECT ID, TOTAL, DATE FROM Transactions 
+WHERE STATUS = 2
