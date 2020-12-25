@@ -1,0 +1,996 @@
+{
+	"info": {
+		"_postman_id": "f74f83f0-ea11-4437-b71f-839a954becf1",
+		"name": "TS02_collection_AisuluuBektenova",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "StatusCodes_Post",
+			"item": [
+				{
+					"name": "StatusCodes_Post300",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 300\", function () {\r",
+									"    pm.response.to.have.status(300);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/status/300",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"status",
+								"300"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "StatusCodes_Post500",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 500\", function () {\r",
+									"    pm.response.to.have.status(500);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/status/500",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"status",
+								"500"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "StatusCodes_Post502",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 502\", function () {\r",
+									"    pm.response.to.have.status(502);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/status/502",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"status",
+								"502"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "StatusCodes_Post402",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 402\", function () {\r",
+									"    pm.response.to.have.status(402);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/status/402",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"status",
+								"402"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "StatusCodes_Post404",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/status/404",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"status",
+								"404"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "StatusCodes_Post501",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 501\", function () {\r",
+									"    pm.response.to.have.status(501);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/status/501",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"status",
+								"501"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "DynamicData",
+			"item": [
+				{
+					"name": "DynamicData_range18",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"abcdefghijklmnopqr\");\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/range/18",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"range",
+								"18"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DynamicData_range9",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"abcdefghi\");\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/range/9",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"range",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DynamicData_range15",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"abcdefghijklmno\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/range/15",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"range",
+								"15"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DynamicData_range4",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"abcd\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/range/4",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"range",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DynamicData_range30",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"abcdefghijklmnopqrstuvwxyzabcd\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/range/30",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"range",
+								"30"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DynamicData_range11",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"abcdefghijk\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/range/11",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"range",
+								"11"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Images",
+			"item": [
+				{
+					"name": "Image_png",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/image/png",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"image",
+								"png"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Image_jpeg",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/image/jpeg",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"image",
+								"jpeg"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Image_svg",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/image/svg",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"image",
+								"svg"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Image_webp",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/image/webp",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"image",
+								"webp"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "ResponseInspector",
+			"item": [
+				{
+					"name": "ResponseInspection_cache",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/cache",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"cache"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ResponseInspector_cacheValue7",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/cache/7",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"cache",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ResponseInspector_responseHeadersDisplay",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/response-headers?freeform=display",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"response-headers"
+							],
+							"query": [
+								{
+									"key": "freeform",
+									"value": "display"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ResponseInspector_responseHeadersDisplay",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/response-headers?freeform=display",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"response-headers"
+							],
+							"query": [
+								{
+									"key": "freeform",
+									"value": "display"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ResponseInspector_responseHeadersExclude",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/response-headers?freeform=exclude",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"response-headers"
+							],
+							"query": [
+								{
+									"key": "freeform",
+									"value": "exclude"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ResponseInspector_responseHeadersExclude",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/response-headers?freeform=exclude",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"response-headers"
+							],
+							"query": [
+								{
+									"key": "freeform",
+									"value": "exclude"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Cookies",
+			"item": [
+				{
+					"name": "Cookies_cookiesDelete",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/cookies/delete?freeform=include",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"cookies",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "freeform",
+									"value": "include"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cookies_cookiesSet",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/cookies/set?freeform=new",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"cookies",
+								"set"
+							],
+							"query": [
+								{
+									"key": "freeform",
+									"value": "new"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cookies_cookiesSetNewCookies",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/cookies/set/New/Cookies",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"cookies",
+								"set",
+								"New",
+								"Cookies"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": "http://httpbin.org"
+		}
+	]
+}
