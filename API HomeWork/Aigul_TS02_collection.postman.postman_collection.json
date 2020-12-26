@@ -1,0 +1,703 @@
+{
+	"info": {
+		"_postman_id": "4f80c96d-6af8-405f-b22b-fa9ab2872697",
+		"name": "Aigul_TS02_collection.postman",
+		"description": "Postman homework",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Smoke",
+			"item": [
+				{
+					"name": "StatusCode_Get_201",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "cf1f7b80-066a-4062-a7a9-a4262213a520",
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {\r",
+									"    pm.response.to.have.status(201);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/status/201",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"status",
+								"201"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "StatusCode_Post_300",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d2dcd630-2363-4a8d-9b6d-fa8d71fe3c56",
+								"exec": [
+									"pm.test(\"Status code is 300\", function () {\r",
+									"    pm.response.to.have.status(300);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/status/300",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"status",
+								"300"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "StatusCode_Put_200",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "a09f0d6b-5a78-484e-8c2a-09a6a873c050",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/status/200",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"status",
+								"200"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "StatusCode_Delete_200",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "59f87c79-aaf0-4e0a-9707-059df4274eaa",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/status/200",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"status",
+								"200"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "StatusCode_Patch_400",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "79195e1f-3fc6-44d7-8545-c7963da7f8f3",
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/status/400",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"status",
+								"400"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "DynamicData_Delay",
+			"item": [
+				{
+					"name": "Delete_Delay",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/delay/undefined",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"delay",
+								"undefined"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_Delay",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/delay/undefined",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"delay",
+								"undefined"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_Drip",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/drip?duration=2&numbytes=10&code=200&delay=2",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"drip"
+							],
+							"query": [
+								{
+									"key": "duration",
+									"value": "2"
+								},
+								{
+									"key": "numbytes",
+									"value": "10"
+								},
+								{
+									"key": "code",
+									"value": "200"
+								},
+								{
+									"key": "delay",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_Links",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/drip?duration=2&numbytes=10&code=200&delay=2",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"drip"
+							],
+							"query": [
+								{
+									"key": "duration",
+									"value": "2"
+								},
+								{
+									"key": "numbytes",
+									"value": "10"
+								},
+								{
+									"key": "code",
+									"value": "200"
+								},
+								{
+									"key": "delay",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put_Delay",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/delay/undefined",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"delay",
+								"undefined"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_Range",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "62f911df-4177-411c-9340-a58c9cd752f9",
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/range/undefined",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"range",
+								"undefined"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Image",
+			"item": [
+				{
+					"name": "Get_Image1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "bc2ae1a1-9c46-423f-af93-653869893a87",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/image",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"image"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_Image.jpeg",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5b322e1d-c9a8-41fb-844a-2398ef6b438d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/image/jpeg",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"image",
+								"jpeg"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_Image.png",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "a1017c70-0db7-425a-8c06-159117c43293",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/image/png",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"image",
+								"png"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_Image.svg",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c2de9de3-1902-4307-b6c7-b26102a4a82b",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/image/svg",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"image",
+								"svg"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get_Image.webp",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "6806714a-10b1-4f91-a7dd-a84c34a96740",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/image/webp",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"image",
+								"webp"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "ResponseInspector",
+			"item": [
+				{
+					"name": "ResponseInspectore_Get_Cache",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "a95f17d2-4861-47e5-bbc4-97d52237cd95",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/cache",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"cache"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ResponseInspector_CacheUndefined",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "83caa0f0-493d-4d25-a19f-307349c6e218",
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/cache/undefined",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"cache",
+								"undefined"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ResponseInspector_CacheEtag",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "95f6b921-6cbe-4360-bd5b-c9e838a041b9",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/etag/{etag}",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"etag",
+								"{etag}"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Redirects",
+			"item": [
+				{
+					"name": "Redirects_Get_AbsoluteRedirect",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "e6349fce-ce1a-40ed-bcce-083df38dc7be",
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/absolute-redirect/undefined",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"absolute-redirect",
+								"undefined"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Redirects_Delete_RedirectTo",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "671a49db-5bf1-4aba-b5aa-cff0d5c27fbd",
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/redirect-to",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"redirect-to"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "05a12df0-acc2-489d-8ed9-15afa28d2ca2",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "db97cebf-29a2-4f15-8990-b5a16790aa01",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "661671e0-45a8-4937-a91e-9507259a4bf5",
+			"key": "URL",
+			"value": "http://httpbin.org"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
